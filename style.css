@@ -1,65 +1,177 @@
 body{
-    background-color:  #000000;
+    /* background-color:  #000000; */
     margin: 0;
     padding: 0;
 }
-/* ....................................start-main.................................... */
-.container{
+/* ....................................start-header.................................... */
+header{
+    background-color:  #2D25A0;
+    height: 720px;
+    width: 100%;
+}
+nav{
+   
+    display: flex;
+    justify-content:space-between;
+}
+nav ul li {
+    display: inline-block;
+     margin: 0 ;
+    list-style: none;
+    position: relative;
+    left: 157px;
+    top: 45px;
     
-    background-color:  white;
 }
-.container h1{
+nav ul li a{
+    color: white;
     font-weight: 700;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 5px;
+   
+    text-decoration: none;
+    overflow: hidden;
+} 
+nav ul li a:hover{
+   
+transform: scale(1.5);
+background-color: orange;
+}
+
+.signin{
+    margin-top: 30px;
+    position: relative;
+    right: 124px;
+    top: 20px;
+}
+.signin:hover{
+    transform: scale(1.5) ;
+    background-color: springgreen;
+}
+.signin  li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+
+    
+}
+.signin li a{
+    text-decoration: none;
+	color: white;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+.signin li i{
     font-size: 30px;
-    color: black;
-    text-align: center;
 }
-.squad{
-    color: red;
+
+
+
+
+
+.top-bar{
+
+    display: flex;
 }
-.ball{
+.text{
+       
+    width: 50%;
+    margin-left: 50px;
+    padding-left: 1%;
+}
+.text img{
+    width: 556.01px;
+    height: 438px;
+    position: relative;
+    top: 157px;
+    transition: transform 1s ease-out 0.2s;
+}
+.text h1{
+    
+    font-size: 64px;
+    font-weight: bold;
+   
+    position: relative;
+    top: 160px;
+    left: 156px;
+    color: white;
+}
+.text a{
+    position: relative;
+    top: 130px;
+    left: 156px;
+    
+    box-shadow: 2px  gray;
+    padding: 10px 15px;
+    background-color: #E02C6D;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+
+}
+.text a:hover{
+    font-size: larger;
+}
+.copa{
     color: springgreen;
 }
+.rica{
+    color: tomato;
+}
+/* header-end */
+/* start-main and photo album */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.container{
+    width: 75%;
+    background-color: whitesmoke;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.container h1{
+
+    text-align: center;
+}
+
 .photo-album{
-    margin-left: 50px;
-    margin-right: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: white;
+
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 25px;
+    grid-template-columns: repeat(3,3fr);
+    grid-column-gap: 30px; 
+    grid-row-gap: 30px;
+   
+
 }
-
-
 .photo-frame{
-    align-items: center;
-    height: 474px;
-    width: 330px;
-    box-shadow: 10px 10px 30px gray;
-    left: 900px;
-    top: 747px;
-    padding: 15px; 
-    border-radius:10px ;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 40px gray;
+    border-radius: 10px;
 }
-.photo img{
+.photo-frame .photo img{
+
     width: 100%;
-    border-radius:10px ;
-    position: relative;
+    border-radius: 10px;
 }
-.photo-detail{
-height: 426px;
-width: 300px;
-left: 15px;
-top: 15px;
-position: relative;
+
+.photo-detail p{
+
+    text-align: left;
 }
 .photo-detail h3 {
     background-color: black;
     color: white;
     text-align: center;
 }
-
 .overflow{
     color: black;
     /* padding: 15px; */
@@ -70,57 +182,89 @@ position: relative;
     
     
 }
-/* ......................................................highlights start ............................................*/
-
-.highlights {
+/* photo-album */
+/* start highlights */
+.container-1{
+    width: 90%;
     display: flex;
+    margin-bottom: 150px;
+    margin-top: 100px;
+    background-color: lightblue;
+}
+.container-1 p{
+    text-align: justify;
+    
+}
+.half-width1{
+   
+    width: 50%;
+    padding-left: 5%;
+    
+}
+.half-width1 h1{
+    
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    margin-left: 120px;
+}
+.half-width1 p{
+    margin-left: 120px;
+}
+
+.half-width1 img{
     width: 567px;
     height: 427px;
 
 }
-.detail {
-    color: black;
-    
-    margin-left: 50px;
+.half-width1 a{
+    box-shadow: 2px  gray;
+    padding: 10px 15px;
+    background-color: #E02C6D;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    margin-left: 120px;
 }
-.photos img{
-  
-    position: absolute;
-    width: 567px;
-    height: 427px;
-    left: 717px;
-    top: 2830px;
-    box-shadow: 10px 10px 40px gray;
-    margin-bottom: 100px;
+.half-width1 a i{
+    padding-left: 8px;
+    margin-top: 10px;
     
+
 }
-/* ......................................................highlights end ............................................*/
-/* ....................................end-main.................................... */
-/* ....................................footer-start.................................... */
-footer{
+/* end highlights */
+/* for bonus marking-end */
+.song{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     background-color: white;
-    margin-top: 30px;
-    
+    border: 5px dotted black;
+    margin: 100px;
+    box-shadow: 0 0 40px gray;
+    padding: 5px;
 }
-.logo, .image, .copy{
+/* for bonus marking-end */
+/* footer-start */
+.logos{
     text-align: center;
+    margin-bottom: 63px;
+    margin-top: 90px;
 }
 .logo img{
-    width: 50%;
-    height: 50%;
-    box-shadow: 10px gray;
+    width: 20%;
 }
 
-.image a{
-    font-size: 33px;
-    
-    
-   
-    box-shadow: 10px 10px 40px gray;
-    overflow:hidden;
-    
+.icon-footer i:hover{
+    box-shadow: 0 0 40px tomato;
 }
-.fa-instagram-square:hover{
+.image{
+    font-size: 25px;
+}
+  .image i{
+      margin: 10px;
+  }
+  .fa-instagram-square:hover{
     transform: scale(1.3);
     background-color: lightblue;
 }
@@ -157,57 +301,110 @@ color:  #0e76a8;
 
 }
 .copy{
-    box-shadow: 10px 10px 40px gray;
+    
     font-weight: 700;
     font-size: 30px;
     margin-top: 20px;
     padding:10px;
     margin-bottom: 20px;
 }
-/* ....................................footer-end.................................... */
-/*------------
- responsive-part
--------------- */
+/* footer end */
 
-@media  only screen  and (max-width:688px)  {
+   /* media queries-start */
+
+@media only screen and (max-width: 687px){
     .container{
         width: 100%;
-        
     }
-    /* .container-fluid{
+    nav{
+        display: none;
+    }
+    header{
+        height: 850px;
+    }
+/* Media queries for top-bar */
+   .top-bar{
+       justify-content: center;
+       flex-direction: column;
+   }
+    .text h1{
+       position: relative;
+       left: 0px;
+       top:112px;
+        font-size: 45px;
+    }
+    .text a{
+        position: relative; 
+        left: 0px;
+
+    }
+    .text img{
+        width: 329px;
+        height: 259.17px;
+        margin-top: 30px;
+    }
+    /* Media queries for player */
+    .photo-album, .song{
         grid-template-columns: repeat(1,1fr);
-    } */
-         
-
-.photo-album , .highlights,  .logos{
-
-    grid-template-columns: repeat(1,1fr);
-    
-}
-.photo-frame, .detail, .photos, .logo {
-        flex-direction: column;
-
-
-    
- }
-} 
-/* tablet */
-@media  only screen  and (min-width:688px) and (max-width:992px)  {
-    .container{
-        width: 100%;
-        
     }
+    .photo-frame{
+        justify-content: center;
+        flex-direction: column;
+    }
+    /*   highlights-start*/
+    .container-1{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .half-width1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+     }
+     .half-width1 h1{
+        position: relative;
+        left: 0px;
+        top:0px;
+        font-size: 30px;
          
+         
+     }
+  
+     .half-width1 p{
+         float: left;
+         text-align: justify;
+         width: 100%;
+         position: relative;
+         left: 0;
+         overflow: hidden;
+         
+     }
+     .half-width1 img{
+         width: 329px;
+         height: 259.17px;
+         margin-top: 30px;
+         position: relative;
+         left: 30px;
+     }
+     .half-width1 a{
+         display: flex;
+         width: 80%;
+     }
+     /* highlight end */
+  
+     .song{
+         position: relative;
+        left: 30px;
+     }
+     /* Media queries for   video*/
+     .song-world iframe{
+         width: 300px;
+         height: 300px;
+     }
+     .logo-footer img{width: 70%;
+    }
+    /* media-queries-end */
 
-    .photo-album , .highlights,  .logos{
-
-    grid-template-columns: repeat(2,1fr);
-    
 }
-.photo-frame, .detail, .photos, .logo{
 
-    grid-template-columns: repeat(1,1fr);
-    
-}
-
-}
