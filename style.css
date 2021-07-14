@@ -404,6 +404,10 @@ color:  #0e76a8;
          width: 80%;
      }
      /* highlight end */
+     .song-world{
+        justify-content: center;
+        flex-direction: column;
+    }
   
      .song-world{
          position: relative;
