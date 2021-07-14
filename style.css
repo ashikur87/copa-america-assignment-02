@@ -1,0 +1,213 @@
+body{
+    background-color:  #000000;
+    margin: 0;
+    padding: 0;
+}
+/* ....................................start-main.................................... */
+.container{
+    
+    background-color:  white;
+}
+.container h1{
+    font-weight: 700;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+.squad{
+    color: red;
+}
+.ball{
+    color: springgreen;
+}
+.photo-album{
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+}
+
+
+.photo-frame{
+    align-items: center;
+    height: 474px;
+    width: 330px;
+    box-shadow: 10px 10px 30px gray;
+    left: 900px;
+    top: 747px;
+    padding: 15px; 
+    border-radius:10px ;
+}
+.photo img{
+    width: 100%;
+    border-radius:10px ;
+    position: relative;
+}
+.photo-detail{
+height: 426px;
+width: 300px;
+left: 15px;
+top: 15px;
+position: relative;
+}
+.photo-detail h3 {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.overflow{
+    color: black;
+    /* padding: 15px; */
+    width: 100%;
+    height: 100px;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+    
+}
+/* ......................................................highlights start ............................................*/
+
+.highlights {
+    display: flex;
+    width: 567px;
+    height: 427px;
+
+}
+.detail {
+    color: black;
+    
+    margin-left: 50px;
+}
+.photos img{
+  
+    position: absolute;
+    width: 567px;
+    height: 427px;
+    left: 717px;
+    top: 2830px;
+    box-shadow: 10px 10px 40px gray;
+    margin-bottom: 100px;
+    
+}
+/* ......................................................highlights end ............................................*/
+/* ....................................end-main.................................... */
+/* ....................................footer-start.................................... */
+footer{
+    background-color: white;
+    margin-top: 30px;
+    
+}
+.logo, .image, .copy{
+    text-align: center;
+}
+.logo img{
+    width: 50%;
+    height: 50%;
+    box-shadow: 10px gray;
+}
+
+.image a{
+    font-size: 33px;
+    
+    
+   
+    box-shadow: 10px 10px 40px gray;
+    overflow:hidden;
+    
+}
+.fa-instagram-square:hover{
+    transform: scale(1.3);
+    background-color: lightblue;
+}
+.fa-twitter:hover{
+    transform: scale(1.3);
+    background-color: lightblue;
+}
+.fa-linkedin:hover{
+    transform: scale(1.3);
+    background-color: lightblue;
+}
+.fa-whatsapp:hover{
+    transform: scale(1.3);
+    background-color: lightblue;
+}
+.fa-instagram-square{
+    margin-right: 20px;
+    color: orangered;
+
+   
+}
+.fa-twitter{
+    margin-right: 20px;
+    color: blue;
+   
+}
+.fa-linkedin{
+    margin-right: 20px;
+color:  #0e76a8;
+}
+.fa-whatsapp{
+    margin-right: 20px;
+    color: #075E54;
+
+}
+.copy{
+    box-shadow: 10px 10px 40px gray;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 20px;
+    padding:10px;
+    margin-bottom: 20px;
+}
+/* ....................................footer-end.................................... */
+/*------------
+ responsive-part
+-------------- */
+
+@media  only screen  and (max-width:688px)  {
+    .container{
+        width: 100%;
+        
+    }
+    /* .container-fluid{
+        grid-template-columns: repeat(1,1fr);
+    } */
+         
+
+.photo-album , .highlights,  .logos{
+
+    grid-template-columns: repeat(1,1fr);
+    
+}
+.photo-frame, .detail, .photos, .logo {
+        flex-direction: column;
+
+
+    
+ }
+} 
+/* tablet */
+@media  only screen  and (min-width:688px) and (max-width:992px)  {
+    .container{
+        width: 100%;
+        
+    }
+         
+
+    .photo-album , .highlights,  .logos{
+
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.photo-frame, .detail, .photos, .logo{
+
+    grid-template-columns: repeat(1,1fr);
+    
+}
+
+}

@@ -1,0 +1,131 @@
+/*-------------------------------------- header start------------------------------------ */
+
+.icon a {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+ .one:hover{
+     
+    transform: scale(1.5);
+    background-color: red;
+
+}
+ .two:hover{
+     
+    transform: scale(1.5);
+    background-color: red;
+
+}
+ .three:hover{
+     
+    transform: scale(1.5);
+    background-color: red;
+
+}
+ .four:hover{
+    
+    transform: scale(1.5);
+    background-color: red;
+
+}
+.circle:hover{
+    transform: scale(1.5);
+    background-color: red;
+}
+.sign:hover{
+    transform: scale(1.5);
+    background-color: red;
+}
+.top-bar , .icon{
+    display: flex; 
+    background-color: #2D25A0;
+  
+    
+
+}
+.text{
+    width: 50%;
+    font-size: 30px;
+    color: #ffff;
+    
+    padding-top:207px;
+    padding-bottom: 240px; 
+    
+    margin-left: 30px;
+ 
+}
+.text a{
+  
+ margin-left: 0px;;
+    
+text-decoration: none;
+width:168px;
+height: 44px;
+font-size: 30px;
+background-color: #E02C6D;
+color:white;
+border: 5px solid #E02C6D;
+border-radius: 10px;
+
+
+
+}
+.pic img{
+    width: 50%;
+    width:556px;
+    height: 454px;
+  
+     margin-top: 50px;
+   
+    padding-bottom: 86px;
+    position: absolute;
+    right: 0;
+    
+   
+}
+/*-------------------------------------- header end------------------------------------ */
+@media  only screen  and (max-width:688px)  {
+    .container{
+        width: 100%;
+        
+    }
+    /* .container-fluid{
+        grid-template-columns: repeat(1,1fr);
+    } */
+         
+
+    .icon, .top-bar{
+
+    grid-template-columns: repeat(1,1fr);
+    
+}
+.link, .user, .text, .pic {
+        flex-direction: column;
+
+
+    
+ }
+} 
+/* tablet */
+@media  only screen  and (min-width:688px) and (max-width:992px)  {
+    .navigation{
+        width: 100%;
+        
+    }
+         
+
+    .icon, .top-bar{
+
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.link, .user, .text, .pic{
+
+    grid-template-columns: repeat(1,1fr);
+    
+}
+
+}
