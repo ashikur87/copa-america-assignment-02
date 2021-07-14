@@ -232,17 +232,29 @@ main{
     
 
 }
+.flag{
+    text-align: center;
+    width: 90%;
+    background-color: lightcyan;
+    box-shadow: 0 0 40px springgreen;
+
+}
 /* end highlights */
 /* for bonus marking-end */
-.song{
+.song-world{
     width: 90%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+   
     background-color: white;
     border: 5px dotted black;
     margin: 100px;
-    box-shadow: 0 0 40px gray;
+    box-shadow: 0 0 40px red;
     padding: 5px;
+}
+audio{
+    padding-top: 20px;
+    margin-top: 90px;
+    background-color: lightblue;
 }
 /* for bonus marking-end */
 /* footer-start */
